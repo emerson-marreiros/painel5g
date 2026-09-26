@@ -6,14 +6,13 @@
 
 [![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)](https://streamlit.io/)
-[![Status](https://img.shields.io/badge/Status-Experimental-orange)]()
-[![License](https://img.shields.io/badge/License-A%20definir-lightgrey)]()
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 </p>
 
 <p align="center">
   <a href="https://painel5g.streamlit.app/">
-     <strong>Acessar o Painel 5G</strong>
+    <strong>Acessar o Painel 5G</strong>
   </a>
 </p>
 
@@ -23,20 +22,18 @@
 
 O **Painel 5G** é uma aplicação web interativa desenvolvida para apoiar a **análise, exploração e visualização de dados relacionados a redes móveis 5G**.
 
-A plataforma utiliza recursos de visualização interativa para transformar dados técnicos em informações que podem ser exploradas de maneira mais intuitiva por pesquisadores, estudantes e profissionais da área de **Telecomunicações, Computação, Ciência de Dados e Redes 5G**.
+A plataforma utiliza recursos de visualização interativa para transformar dados técnicos em informações que podem ser exploradas de maneira intuitiva por pesquisadores, estudantes e profissionais das áreas de **Telecomunicações, Computação, Ciência de Dados e Redes 5G**.
 
 O dashboard foi concebido como uma interface de experimentação e análise, permitindo observar diferentes características do ambiente de rede por meio de **gráficos, métricas, painéis e filtros interativos**.
 
 ### Aplicação online
 
-> **Painel 5G:**  
-> https://painel5g.streamlit.app/
+**Painel 5G:**  
+https://painel5g.streamlit.app/
 
 ---
 
-# Objetivos
-
-O projeto tem como principais objetivos:
+## Objetivos
 
 - Facilitar a exploração visual de dados de redes 5G;
 - Permitir análise interativa de métricas;
@@ -44,44 +41,29 @@ O projeto tem como principais objetivos:
 - Apoiar a análise espacial da infraestrutura e/ou cobertura de rede;
 - Transformar dados técnicos em indicadores visuais;
 - Servir como ferramenta de apoio à pesquisa científica;
-- Facilitar experimentos envolvendo otimização e planejamento de redes;
-- Apoiar atividades acadêmicas relacionadas a 5G e computação;
+- Apoiar experimentos envolvendo planejamento e otimização de redes;
+- Apoiar atividades acadêmicas relacionadas a 5G;
 - Disponibilizar uma interface web acessível sem necessidade de instalação local.
 
 ---
 
-# Motivação
+## Motivação
 
 A evolução das redes móveis para o paradigma **5G** aumenta significativamente a quantidade e a complexidade dos dados utilizados para representar o comportamento da infraestrutura de telecomunicações.
 
-Variáveis relacionadas a:
+Variáveis relacionadas a cobertura, capacidade, localização de estações, distribuição espacial, usuários, qualidade do sinal, tráfego e desempenho podem ser difíceis de interpretar quando apresentadas apenas em tabelas ou arquivos de dados.
 
-- cobertura;
-- capacidade;
-- localização de estações;
-- distribuição espacial;
-- usuários;
-- qualidade do sinal;
-- tráfego;
-- interferência;
-- desempenho;
-- utilização de recursos;
+O **Painel 5G** busca facilitar essa interpretação por meio de uma abordagem baseada em **visualização interativa de dados**.
 
-podem ser difíceis de interpretar quando apresentadas apenas em tabelas ou arquivos de dados.
-
-O **Painel 5G** busca solucionar parte desse problema utilizando uma abordagem baseada em **visualização interativa de dados**.
-
-A ideia central é transformar dados brutos em uma representação visual que permita ao usuário investigar o comportamento da rede de forma exploratória.
+A ideia central é transformar dados brutos em representações visuais que permitam investigar o comportamento da rede de forma exploratória.
 
 ---
 
-# Arquitetura conceitual
-
-A arquitetura do sistema pode ser representada pelo fluxo:
+## Arquitetura conceitual
 
 ```text
                     ┌──────────────────────┐
-                    │     Dados 5G         │
+                    │       Dados 5G       │
                     │                      │
                     │ • métricas           │
                     │ • localização        │
@@ -91,46 +73,41 @@ A arquitetura do sistema pode ser representada pelo fluxo:
                                │
                                ▼
                     ┌──────────────────────┐
-                    │ Processamento        │
-                    │ e preparação         │
-                    │ dos dados            │
+                    │    Processamento     │
+                    │   e preparação dos   │
+                    │        dados        │
                     └──────────┬───────────┘
                                │
                                ▼
                     ┌──────────────────────┐
-                    │ Análise              │
-                    │ estatística /        │
-                    │ espacial             │
+                    │ Análise estatística  │
+                    │       e espacial     │
                     └──────────┬───────────┘
                                │
                                ▼
                     ┌──────────────────────┐
-                    │ Visualização         │
-                    │ interativa           │
+                    │    Visualização      │
+                    │      interativa      │
                     └──────────┬───────────┘
                                │
                                ▼
                     ┌──────────────────────┐
-                    │      Painel 5G       │
-                    │      Streamlit       │
+                    │      PAINEL 5G       │
+                    │       Streamlit      │
                     └──────────────────────┘
 ```
 
 ---
 
-# Funcionalidades
-
-O painel foi concebido para disponibilizar uma interface interativa para exploração dos dados.
-
-Entre as funcionalidades esperadas da plataforma estão:
+## Funcionalidades
 
 ### Indicadores
 
-Apresentação de métricas relevantes por meio de **KPIs e indicadores visuais**, permitindo uma visão geral do conjunto de dados.
+Apresentação de métricas relevantes por meio de **KPIs e indicadores visuais**, permitindo uma visão geral dos dados analisados.
 
 ### Gráficos
 
-Utilização de diferentes representações gráficas para investigar:
+Utilização de representações gráficas para investigar:
 
 - distribuição dos dados;
 - comportamento das variáveis;
@@ -142,23 +119,22 @@ Utilização de diferentes representações gráficas para investigar:
 
 A análise espacial permite observar a distribuição geográfica dos elementos relacionados à rede.
 
-Essa abordagem é especialmente importante para estudos de:
+Essa abordagem pode apoiar estudos de:
 
 - cobertura;
 - localização de células;
 - distribuição de usuários;
 - planejamento de infraestrutura;
-- análise territorial.
+- análise territorial;
+- otimização espacial.
 
 ### Filtros interativos
 
-O usuário pode utilizar controles da interface para selecionar diferentes subconjuntos dos dados e observar como as visualizações se modificam.
-
-Isso permite uma análise exploratória sem necessidade de alterar diretamente o código-fonte.
+Os controles da interface permitem selecionar diferentes subconjuntos dos dados e observar dinamicamente como as visualizações são modificadas.
 
 ---
 
-# Aplicação científica
+## Aplicação científica
 
 O Painel 5G pode ser utilizado como uma camada de **exploração e validação experimental** em pesquisas relacionadas a redes móveis.
 
@@ -189,96 +165,84 @@ Visualização
 Interpretação dos resultados
 ```
 
-Nesse contexto, o dashboard pode funcionar como uma ferramenta intermediária entre a geração dos dados e a interpretação dos resultados experimentais.
-
 ---
 
-# Tecnologias
-
-O projeto utiliza o ecossistema Python para processamento e visualização de dados.
-
-### Principais tecnologias
+## Tecnologias
 
 | Tecnologia | Função |
 |---|---|
-| - Python | Linguagem principal |
-| - Streamlit | Interface web e dashboard |
-| - Bibliotecas de visualização | Construção dos gráficos |
-| - Bibliotecas científicas | Processamento e análise dos dados |
-| - Recursos geoespaciais | Análise espacial |
-| - Streamlit Community Cloud | Hospedagem da aplicação |
+| Python | Linguagem principal |
+| Streamlit | Interface web e dashboard |
+| Bibliotecas de visualização | Construção dos gráficos |
+| Bibliotecas científicas | Processamento e análise |
+| Recursos geoespaciais | Análise espacial |
+| Streamlit Community Cloud | Hospedagem da aplicação |
 
 ---
 
-# Acesso ao sistema
+## Acesso ao sistema
 
-A aplicação pode ser acessada diretamente pelo navegador:
+A aplicação está disponível online:
 
-### [Painel 5G](https://painel5g.streamlit.app/)
+### https://painel5g.streamlit.app/
 
 Não é necessário instalar Python ou configurar um ambiente local para utilizar a versão publicada.
 
 ---
 
-# Execução local
+## Execução local
 
-Caso o código-fonte esteja disponível neste repositório, o projeto pode ser executado localmente seguindo os passos abaixo.
+Caso o código-fonte esteja disponível neste repositório:
 
-## 1. Clonar o repositório
+### 1. Clonar o repositório
 
 ```bash
 git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
-```
-
-```bash
 cd SEU-REPOSITORIO
 ```
 
-## 2. Criar ambiente virtual
+### 2. Criar ambiente virtual
 
-### Linux / macOS
+#### Linux / macOS
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### Windows
+#### Windows
 
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
 ```
 
-## 3. Instalar dependências
+### 3. Instalar dependências
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 4. Executar o Streamlit
+### 4. Executar o Streamlit
 
 ```bash
 streamlit run app.py
 ```
 
-Após a execução, o Streamlit disponibilizará a aplicação localmente, normalmente em:
+A aplicação estará normalmente disponível em:
 
 ```text
 http://localhost:8501
 ```
 
-> Ajuste `app.py` caso o arquivo principal da aplicação possua outro nome.
-
 ---
 
-# Estrutura sugerida do projeto
+## Estrutura sugerida
 
 ```text
 painel5g/
 │
 ├── app.py
-│
 ├── pages/
 │   ├── dashboard.py
 │   ├── analise.py
@@ -298,88 +262,46 @@ painel5g/
 │
 ├── requirements.txt
 ├── README.md
+├── LICENSE
 └── .gitignore
 ```
 
 ---
 
-# Fluxo de utilização
+## Fluxo de utilização
 
-O usuário pode utilizar o sistema seguindo um fluxo exploratório:
-
-### 1 - Acessar o painel
-
-Abrir:
-
-https://painel5g.streamlit.app/
-
-### 2 - Selecionar os parâmetros
-
-Utilizar os filtros e controles disponíveis na interface.
-
-### 3 - Observar os indicadores
-
-Avaliar os principais KPIs apresentados pelo sistema.
-
-### 4 - Explorar os gráficos
-
-Investigar as relações entre as variáveis disponíveis.
-
-### 5 - Avaliar a distribuição espacial
-
-Quando disponível, utilizar os mapas para observar a distribuição geográfica dos elementos analisados.
-
-### 6 - Interpretar os resultados
-
-Relacionar os resultados visuais com o problema de pesquisa ou cenário experimental analisado.
+1. **Acessar o painel**
+2. **Selecionar os parâmetros**
+3. **Observar os indicadores**
+4. **Explorar os gráficos**
+5. **Avaliar a distribuição espacial**
+6. **Interpretar os resultados**
 
 ---
 
-# Metodologia de análise
+## Metodologia de análise
 
 A interpretação dos resultados pode ser organizada em quatro níveis:
 
-## Nível 1 — Visão geral
+### 1. Visão geral
 
-Primeiramente devem ser observados os indicadores gerais apresentados pelo dashboard.
+Observação dos principais indicadores apresentados pelo dashboard.
 
-O objetivo é identificar a dimensão e as características principais do conjunto de dados.
+### 2. Distribuição
 
-## Nível 2 — Distribuição
+Análise da concentração, dispersão, valores extremos e padrões dos dados.
 
-Em seguida, devem ser analisados os gráficos de distribuição.
+### 3. Relações
 
-Essa etapa permite identificar:
+Investigação das relações entre diferentes variáveis.
 
-- concentração;
-- dispersão;
-- valores extremos;
-- assimetrias;
-- padrões.
+### 4. Análise espacial
 
-## Nível 3 — Relações
-
-Posteriormente podem ser investigadas relações entre diferentes variáveis.
-
-Exemplos:
-
-```text
-Variável A ↔ Variável B
-Variável A ↔ Localização
-Variável B ↔ Desempenho
-```
-
-## Nível 4 — Análise espacial
-
-Finalmente, a dimensão espacial pode ser utilizada para investigar como os indicadores se distribuem geograficamente.
-
-Essa etapa pode ser particularmente importante em estudos de planejamento e otimização de redes 5G.
+Avaliação da distribuição geográfica dos indicadores e elementos da rede.
 
 ---
 
-# Possíveis aplicações
-
-A plataforma pode ser utilizada como suporte para diferentes linhas de investigação:
+## Possíveis aplicações
 
 - Planejamento de redes 5G;
 - Análise de cobertura;
@@ -396,7 +318,7 @@ A plataforma pode ser utilizada como suporte para diferentes linhas de investiga
 
 ---
 
-# Integração com pesquisa
+## Integração com pesquisa
 
 O dashboard pode atuar como uma camada de visualização dentro de uma arquitetura experimental maior:
 
@@ -427,7 +349,7 @@ O dashboard pode atuar como uma camada de visualização dentro de uma arquitetu
                        ▼
               ┌─────────────────┐
               │    Painel 5G    │
-              │   Streamlit     │
+              │    Streamlit    │
               └────────┬────────┘
                        │
                        ▼
@@ -439,25 +361,9 @@ O dashboard pode atuar como uma camada de visualização dentro de uma arquitetu
 
 ---
 
-# Contexto acadêmico
+## Demonstração
 
-O projeto pode ser empregado como ferramenta de apoio a trabalhos acadêmicos envolvendo **redes 5G, otimização espacial, análise de dados e planejamento de infraestrutura de telecomunicações**.
-
-Sua utilização permite separar claramente:
-
-**dados → processamento → modelagem → experimentação → visualização → interpretação**
-
-Essa separação favorece a reprodutibilidade dos experimentos e a comunicação dos resultados.
-
----
-
-# Demonstração
-
-A aplicação está disponível online:
-
-> **https://painel5g.streamlit.app/**
-
-Para documentar uma versão específica do projeto, recomenda-se adicionar aqui capturas de tela das principais páginas do dashboard:
+Recomenda-se adicionar capturas de tela do dashboard ao repositório:
 
 ```text
 docs/
@@ -475,11 +381,9 @@ Exemplo:
 
 ---
 
-# Desenvolvimento
+## Desenvolvimento
 
 Contribuições são bem-vindas.
-
-Para contribuir:
 
 ```bash
 git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
@@ -491,16 +395,11 @@ Crie uma branch:
 git checkout -b feature/minha-feature
 ```
 
-Faça suas alterações e registre:
+Faça suas alterações:
 
 ```bash
 git add .
 git commit -m "feat: adiciona nova funcionalidade"
-```
-
-Envie para o repositório:
-
-```bash
 git push origin feature/minha-feature
 ```
 
@@ -508,58 +407,64 @@ Depois, abra um **Pull Request**.
 
 ---
 
-# Roadmap
+## Roadmap
 
-Possíveis evoluções do projeto:
-
--  Ampliação dos indicadores 5G
--  Novas visualizações espaciais
--  Novos filtros interativos
--  Comparação entre cenários
--  Exportação dos resultados
--  Integração com novos datasets
--  Automatização do processamento
--  Integração com modelos de Machine Learning
--  Integração com algoritmos de otimização
--  Integração com algoritmos quânticos
--  Implementação de experimentos reprodutíveis
--  Documentação técnica completa
+- [ ] Ampliação dos indicadores 5G
+- [ ] Novas visualizações espaciais
+- [ ] Novos filtros interativos
+- [ ] Comparação entre cenários
+- [ ] Exportação dos resultados
+- [ ] Integração com novos datasets
+- [ ] Automatização do processamento
+- [ ] Integração com modelos de Machine Learning
+- [ ] Integração com algoritmos de otimização
+- [ ] Integração com algoritmos quânticos
+- [ ] Implementação de experimentos reprodutíveis
+- [ ] Documentação técnica completa
 
 ---
 
-# Licença
+## 📄 Licença
 
-A licença do projeto deve ser definida de acordo com as condições de uso e distribuição do código, dos dados e dos componentes utilizados.
+Este projeto está licenciado sob a **Licença MIT**.
 
-> **Nota:** caso o projeto utilize datasets de terceiros, as respectivas licenças e condições de uso também devem ser observadas.
+Você pode consultar o texto completo da licença no arquivo:
+
+```text
+LICENSE
+```
+
+A Licença MIT permite o uso, cópia, modificação, distribuição e sublicenciamento do software, observadas as condições estabelecidas na própria licença, incluindo a preservação do aviso de copyright e da licença.
 
 ---
 
-# Autor
+## Autor
 
 **Emerson Marreiros**
 
-Projeto relacionado à pesquisa e desenvolvimento de soluções para análise, visualização e otimização de redes 5G.
+Projeto relacionado à pesquisa e desenvolvimento de soluções para **análise, visualização e otimização de redes 5G**.
 
 ---
 
-# Links
+## Links
 
 ### Aplicação
 
-**Painel 5G:**  
 https://painel5g.streamlit.app/
 
-### Tecnologias
+###  Python
 
-- Python — https://www.python.org/
-- Streamlit — https://streamlit.io/
+https://www.python.org/
+
+### Streamlit
+
+https://streamlit.io/
 
 ---
 
-# Citação
+##  Citação
 
-Caso este projeto seja utilizado em trabalhos acadêmicos, recomenda-se citar o repositório e a publicação associada ao projeto, quando disponível.
+Caso este projeto seja utilizado em trabalhos acadêmicos, recomenda-se citar o repositório e a publicação científica associada ao projeto, quando disponível.
 
 ---
 
